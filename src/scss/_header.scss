@@ -1,0 +1,192 @@
+.header {
+  padding: 10px 10px 0px 20px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+@media (max-width: 500px) {
+  #second {
+    margin: 20px auto;
+  }
+}
+.auth-box {
+  padding: 5px 3px;
+  text-align: center;
+  border: 1px solid #002f34;
+  color: #002f34;
+  font-weight: bold;
+  cursor: pointer;
+}
+.list-style-type-none{
+  padding: 0;
+  list-style-type: none;
+}
+.list-style-type-none div {
+  color: #002f34;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px 7px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.list-style-type-none div:hover{
+  background-color: #c8f8f6;
+}
+#hello {
+  position: absolute;
+  top: 20px;
+  left: 110px;
+}
+label {
+  color: #002f34;
+  font-weight: bold;
+}
+#navigator {
+  text-align: center;
+  font-weight: bold;
+}
+#navigator {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(21, 123, 247);
+}
+.auth-box:hover {
+  box-shadow: inset 0 0 0 1.5px #002f34; /* Creates an inner shadow that looks like a border */
+}
+.logo img {
+  height: 35px; /* Adjust as needed */
+}
+
+.icons {
+  margin-left: 20px;
+  gap: 10px; /* Space between icons */
+}
+#bold {
+  text-decoration: none !important;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+#circle {
+  margin: 15px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 47, 52, 0.16),
+    rgba(0, 47, 52, 0.01) 81.77%,
+    rgba(0, 47, 52, 0.01)
+  );
+}
+
+/* Sidebar styling */
+@media (max-width: 768px) {
+  .header-actions {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-block;
+    margin-left: auto;
+  }
+  #icon,#icon2{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+
+#bold:hover {
+  color: rgb(0, 132, 255);
+}
+.city-selector {
+  width: 200px; /* Set the width of the select box */
+  padding: 10px; /* Add padding for a boxy look */
+  border: 1px solid #d9d9d9; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  outline: none;
+}
+option {
+  outline: none;
+  border: none;
+}
+option:hover {
+  background-color: aquamarine !important;
+}
+.search-container {
+  display: flex; /* Use flexbox to align input and button */
+  border: 1px solid #cdcdcd; /* Border for the search box */
+  border-radius: 4px; /* Rounded corners */
+  overflow: hidden; /* Prevent overflow */
+}
+.search-container:hover{
+  border: 2px solid #c8f8f6 ;
+}
+.search-input {
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  padding: 10px; /* Padding for the input */
+  flex: 1; /* Allow input to take available space */
+  height: 40px; /* Set a fixed height */
+}
+#icon,#icon2{
+  padding: .8rem;
+  border-radius: 50%;
+  margin: 0;
+}
+
+#icon:hover, #icon2:hover{
+  background-color: #e9fcfb;
+}
+.search-button {
+  background-color: #002f34; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  padding: 0 15px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 40px; /* Match button height with input */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+.login {
+  cursor: pointer;
+  margin: 0 8px;
+  font-weight: bold;
+  color: #002f34;
+}
+.sell-button {
+  padding: 8px 12px;
+  position: relative; /* Position relative to allow absolute positioning of text */
+  cursor: pointer;
+  display: inline-block; /* Allow padding and height adjustments */
+}
+
+.sell-icon {
+  width: 95px; /* Set a width for the SVG */
+  height: 80px; /* Set a height for the SVG */
+}
+
+.sell-text {
+  font-weight: bold;
+  position: absolute; /* Position text absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to truly center */
+  color: #002f34; /* Text color */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center text */
+  pointer-events: none; /* Prevent mouse events on the text */
+}
+@media (max-width: 600px) {
+  .sell-button {
+    position: fixed;
+    z-index: 9999999;
+    bottom: 5%;
+    right: 40%;
+  }
+}

@@ -1,0 +1,71 @@
+.categories {
+  padding: 20px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hov:hover{
+  cursor: pointer;
+  color:#00a49f;;
+}
+.category-item {
+  margin:0px 20px;
+  text-align: center;
+  width: 100px; /* Adjust width as needed */
+}
+h4{
+  color: #002f34;
+}
+.category-image {
+  width: 6rem; /* Circle size */
+  height: 6rem; /* Circle size */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Cover the circle */
+}
+
+.category-caption {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 14px; /* Adjust font size as needed */
+}
+.horizontal-list {
+  color: #002f34;
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox to arrange items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+.horizontal-list:nth-child(0){
+  font-weight: bold;
+}
+.horizontal-list li {
+  margin-right: 20px; /* Space between items */
+}
+
+.arrow {
+  margin-left: 5px; /* Space between text and arrow */
+}
+.ant-card{
+  border-radius: 0px;
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+  .horizontal-list {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
+  }
+  .carousel-item img{
+    height: 20vh;
+  }
+  .horizontal-list li {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Add space between items vertically */
+  }
+  .categories-container{
+    padding: 0;
+    margin: 0;
+  }
+}

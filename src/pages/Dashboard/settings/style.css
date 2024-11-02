@@ -1,0 +1,50 @@
+.c-border {
+  border: 0.1rem solid rgba(0, 47, 52, 0.2);
+  width: 80%;
+  margin: auto;
+  padding: 1.6rem 2.4rem;
+  border-radius: 4px;
+}
+#profile-pic {
+  border-radius: 100%;
+  height: 10rem;
+  width: 10rem;
+}
+#uploader {
+  cursor: pointer;
+  height: 40px;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #002f34;
+}
+@media (max-width: 600px) {
+  #uploader {
+    padding: 0;
+    width: 100px;
+  }
+}
+#discard {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.uploaderi {
+  width: 150px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.5rem 0.2rem;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #002f34;
+}
+#info {
+  font-size: 13px;
+}
+#small {
+  font-size: 12px;
+}
+.w-5 {
+  width: 40%;
+}
