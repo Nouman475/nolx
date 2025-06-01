@@ -32,10 +32,10 @@
 - Showcases all live ads with filters by category, location, price, and posting date.
 - Highlights featured and recent listings.
 
-### 🔹 Login Page
+### 🔹 Login
 - Users can log in using **Email/Password** or **Google Sign-In** via Firebase Authentication.
 
-### 🔹 Signup Page
+### 🔹 Signup
 - New users can register with Firebase authentication.
 - Validations for email, password, and user inputs.
 
