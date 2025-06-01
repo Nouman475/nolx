@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+OLX Clone
+1. Project Overview
+Title: OLX Clone
+Description: A full-stack classifieds platform where users can post, search, and manage second-hand products, equipped with Google authentication and a dynamic dashboard for managing listings.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Features
+🎨 Modern and responsive UI inspired by OLX
 
-## Available Scripts
+🔐 User authentication via Firebase (Email & Google)
 
-In the project directory, you can run:
+📦 Post, edit, and delete product listings
 
-### `npm start`
+🔍 Filter and search ads by category, price, location, and date
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧾 Product preview with image carousel and detailed description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📬 Messaging system for buyer-seller communication (if implemented)
 
-### `npm test`
+🧑‍💼 User dashboard to manage listings and account settings
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📱 Mobile-responsive design
 
-### `npm run build`
+3. Tech Stack
+Frontend: React, Bootstrap, SCSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Backend: Firebase (Auth, Firestore, Storage)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Authentication: Firebase Authentication (Email/Password + Google Sign-In)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Other Tools: React Router, Toastify JS, Ant Design
 
-### `npm run eject`
+4. Pages and Structure
+🔹 Home Page
+Showcases all live ads with filters by category, location, price, and posting date.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Highlights featured and recent listings.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔹 Login Page
+Users can log in using Email/Password or Google Sign-In via Firebase Authentication.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🔹 Signup Page
+New users can register with Firebase authentication.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Validations for email, password, and user inputs.
 
-## Learn More
+🔹 Post Ad Page
+Allows logged-in users to add a new product listing with title, description, category, price, and image upload (via Firebase Storage).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔹 Product Details Page
+Displays complete ad details including image slider, seller info, and location.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Option to contact the seller.
 
-### Code Splitting
+🔹 User Dashboard
+Sub-pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+My Ads:
+List of ads posted by the user with options to edit or delete.
 
-### Analyzing the Bundle Size
+Post New Ad:
+Form to submit a new listing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Account Settings:
+View or update personal profile information.
 
-### Making a Progressive Web App
+5. Installation
+🔧 Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/YourUsername/OLX-Clone
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+bash
+Copy
+Edit
+npm install
+Start development server:
 
-### Advanced Configuration
+bash
+Copy
+Edit
+npm start
+6. Contributing
+Contributions, suggestions, and improvements are welcome!
+Please make sure to follow the project's coding standards and guidelines.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+7. Author
+M Nouman
 
-### Deployment
+8. Acknowledgements
+Big thanks to the open-source community for their excellent libraries and Firebase for backend services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+9. License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
